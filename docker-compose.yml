@@ -6,8 +6,11 @@ app:
   ports:
     - "3000:3000"
   links:
-    - postgres
-postgres:
-  image: postgres:9.4
+    - app.db
+
+app.db:
+  image: "mysql:5.5"
+  environment:
+    MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
   ports:
-    - "5432"
+    - '3306:3306'
