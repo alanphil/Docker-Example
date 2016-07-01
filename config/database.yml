@@ -15,11 +15,11 @@
 development:  
   adapter: mysql2
   encoding: utf8
-  database: my_app_development
+  database: app_development
   pool: 5
   username: root
   password:
-  host: my_app.db
+  host: app.db
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
