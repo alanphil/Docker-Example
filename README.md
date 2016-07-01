@@ -23,7 +23,7 @@ docker-compose run app rake db:create
 docker-compose run app rake db:migrate
 ```
 
-NOTE: Discovered why the online tutorials all seem to use PostgreSQL instead of MySQL for the database. PostgreSQL is really easy to initally configure with Docker. The trick to easily using MySQL with Docker Compose is to make sure the following line is in the docker-compose YAML file:
+NOTE: Discovered why the online tutorials all seem to use PostgreSQL instead of MySQL for the database. PostgreSQL is really easy to initially configure with Docker. The trick to easily using MySQL with Docker Compose is to make sure the following line is in the docker-compose YAML file:
 
 ```MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'```
 
